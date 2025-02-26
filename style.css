@@ -1,0 +1,459 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #bcdbf6; /* AliceBlue */
+    color: #333;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 1000;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    background-color: #074cb2; /* DodgerBlue */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem; /* Increase size for emphasis */
+        letter-spacing: 1px; /* Add spacing for elegance */
+        color:#ffffff
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    font-style: italic;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: #87cefa; /* LightSkyBlue */
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Home Section */
+#home {
+    background: linear-gradient(135deg, #1e90ff, #87cefa);
+    color: #fff;
+    padding: 100px 20px;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.home-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.home-content h1 {
+    font-size: 2.5rem;
+    font-style:inherit;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #1e90ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1e90ff;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+/* About Section */
+/* About Me Section */
+#about {
+    background-color: #fff;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-text strong {
+    color: #1e90ff;
+}
+
+.education, .certifications, .hobbies {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center; /* Center-align text */
+}
+
+.education h3, .certifications h3, .hobbies h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+.education-card, .certification-card {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items */
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.education-card i, .certification-card i {
+    font-size: 1.8rem;
+    color: #1e90ff;
+}
+
+.education-details h4, .certification-details h4 {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.education-details, .certification-details {
+    text-align: center; /* Ensures text inside details is centered */
+}
+
+.education-details p, .certification-details p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.hobbies-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align items */
+}
+
+
+.hobbies-list p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center; /* Ensures text is centered */
+}
+
+.hobbies-list i {
+    color: #1e90ff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .education-card, .certification-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/* Skills Section */
+#skills {
+    background-color: #f0f8ff; /* AliceBlue */
+}
+
+#skills h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.technical-skills, .non-technical-skills {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.technical-skills h3, .non-technical-skills h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #1e90ff;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact {
+    background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #1e90ff;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #87cefa;
+}
+
+/* Footer */
+footer {
+    background-color: #1e90ff;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+    }
+    
+    .links a {
+        margin: 10px 0;
+    }
+    
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .skills-grid {
+        flex-direction: column;
+    }
+}
+/* Animations */
+[data-aos] {
+    opacity: 0;
+    transition: all 0.8s ease;
+  }
+  
+  [data-aos="fade-up"] {
+    transform: translateY(50px);
+  }
+  
+  [data-aos="fade-right"] {
+    transform: translateX(-50px);
+  }
+  
+  [data-aos="fade-left"] {
+    transform: translateX(50px);
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translate(0);
+  }
+  
+  /* Contact Form */
+  .contact-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .contact-form {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    max-width: 400px;
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #1e90ff;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  /* Hover Effects */
+  .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(30, 144, 255, 0.3);
+  }
+  
+  .skill:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Contact Section */
+  @media (max-width: 768px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
+.floating-text span {
+    display: inline-block;
+    animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Add delay to each letter */
+.floating-text span:nth-child(1) { animation-delay: 0.1s; }
+.floating-text span:nth-child(2) { animation-delay: 0.2s; }
+.floating-text span:nth-child(3) { animation-delay: 0.3s; }
+.floating-text span:nth-child(4) { animation-delay: 0.4s; }
+.floating-text span:nth-child(5) { animation-delay: 0.5s; }
+.floating-text span:nth-child(6) { animation-delay: 0.6s; }
+.floating-text span:nth-child(7) { animation-delay: 0.7s; }
+.floating-text span:nth-child(8) { animation-delay: 0.8s; }
+.floating-text span:nth-child(9) { animation-delay: 0.9s; }
+.floating-text span:nth-child(10) { animation-delay: 1.0s; }
+.floating-text span:nth-child(11) { animation-delay: 1.1s; }
+.floating-text span:nth-child(12) { animation-delay: 1.2s; }
+.floating-text span:nth-child(13) { animation-delay: 1.3s; }
+.floating-text span:nth-child(14) { animation-delay: 1.4s; }
+.floating-text span:nth-child(15) { animation-delay: 1.5s; }
+.floating-text span:nth-child(16) { animation-delay: 1.6s; }
+.floating-text span:nth-child(17) { animation-delay: 1.7s; }
+.floating-text span:nth-child(18) { animation-delay: 1.8s; }
+.floating-text span:nth-child(19) { animation-delay: 1.9s; }
+.floating-text span:nth-child(20) { animation-delay: 2.0s; }
+.floating-text span:nth-child(21) { animation-delay: 2.1s; }
+.floating-text span:nth-child(22) { animation-delay: 2.2s; }
+.floating-text span:nth-child(23) { animation-delay: 2.3s; }
+.floating-text span:nth-child(24) { animation-delay: 2.4s; }
+/* Continue for all letters */
+/* Typewriter Animation */
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid #f5f6f8; /* Cursor effect */
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0762be; }
+}
